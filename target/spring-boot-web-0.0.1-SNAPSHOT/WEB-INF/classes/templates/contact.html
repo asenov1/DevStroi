@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form Example</title>
+    <link href="/css/main.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+    <link href="../../static/css/guru.css"
+          th:href="@{css/guru.css}" rel="stylesheet" media="screen"/>
+    <link href="../../static/css/guru.css"/>
+</head>
+<body>
+<div class="container">
+    <div th:fragment="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" th:href="@{/}">Начало</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" th:href="@{/uslugi}">Услуги</a></li>
+                        <li><a href="#" th:href="@{/contact}">Контакт</a></li>
+
+
+                        <li><a href="#" th:href="@{/products}">Стройтелни цени</a></li>
+                        <li><a href="#" th:href="@{/product/new}">Добавяне на услуги</a></li>
+                        <li><a href="#" th:href="@{/administrator}">Administrator</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+<center><h2> За повече информация </h2>
+
+
+<h5>Данчо Аврамов<br></h5>
+тел.----------<br>
+<h5>Email: asenov_@abv.bg<br></h5>
+
+
+<form action="@{/contact}" method="post">
+
+
+    <h2>За контакти:</h2>
+
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <input type="text" name="comment" size="50"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</center>
+    </body>
+    </html>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

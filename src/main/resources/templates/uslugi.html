@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Услуги</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+    <link href="../../static/css/guru.css"
+          th:href="@{css/guru.css}" rel="stylesheet" media="screen"/>
+    <link href="../../static/css/guru.css"
+</head>
+<body>
+<div class="container">
+    <div th:fragment="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" th:href="@{/}">Начало</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" th:href="@{/uslugi}">Услуги</a></li>
+                        <li><a href="#" th:href="@{/contact}">Контакт</a></li>
+
+
+                        <li><a href="#" th:href="@{/products}">Стройтелни цени</a></li>
+                        <li><a href="#" th:href="@{/product/new}">Добавяне на услуги</a></li>
+                        <li><a href="#" th:href="@{/administrator}">Administrator</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <p class="row text-center">
+                <h6><p style="color:red">Услуги</h6></p>
+
+
+<h4>Фирмата предлага следните услуги:</h4>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Услуги</th>
+                    <th scope="col"> Инфо</th>
+                    <th scope="col">Цени</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>бояджийски услуги</td>
+                    <td>каталог</td>
+                    <td>цени</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>шпакловки, мазилки;</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>плочки (фаянс/ теракот)</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Гипсокартон</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>растерен таван</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>PVC Ламперия</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>топлоизолация (вътрешна и външна до 2-ри етаж)</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>хидроизолация</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>обръщане на врати и прозорци</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>къртене, почистване и извозване</td>
+                    <td>Цени</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>зидария и замазки</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>ел. услуги</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td>слаботокови инсталации-Lan,монтаж на розетки</td>
+                    <td>каталог</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td>железарски услуги</td>
+                    <td>Каталог</td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+<!--            <center<p><table class="center" style="width:100%"> <tr><td>- бояджийски услуги;<a href="#" th:href="@{/products}"> Цени</a> </td> </tr>-->
+<!--            <br><tr><td>- шпакловки, мазилки;</br></tr></td>-->
+<!--            <br><tr><td>- плочки (фаянс/ теракот)</br></tr></td>-->
+<!--            <br><tr><td>- гипсокартон;</br></tr></td>-->
+<!--            <br><tr><td>- растерен таван</br></tr></td>-->
+<!--            <br><tr><td>- PVC Ламперия </tr></td>-->
+
+<!--            <br><tr><td>- топлоизолация (вътрешна и външна до 2-ри етаж);</br></tr></td>-->
+<!--            <br><tr><td>- хидроизолация;</br></tr></td>-->
+<!--            <br><tr><td>- обръщане на врати и прозорци;</tr></br></td>-->
+<!--            <br><tr><td>- къртене, почистване и извозване;</br></td></tr>-->
+<!--            <br><tr><td>- зидария и замазки;</br> </tr></td>-->
+<!--            <br><tr><td>- ел. услуги;</br></td><tr>-->
+<!--                <br><tr><td>-слаботокови инсталации-Lan,монтаж на розетки</br></tr></td>-->
+<!--            <br><tr><td>- железарски услуги; </br></td></tr>-->
+<!--            <br><tr><td>- почистване;</br></td></tr>-->
+<!--<br><tr><td>- сухо строителство - всичко от гипскартон (окачени тавани, предстенни обшивки, преградни стени, декорации, фигури)-по желание-->
+<!--                може да ви изработим 3D-таван с фигурите, които желаете </br></td></tr>-->
+
+
+<!--</center>        </table>-->
+</body>
+</html>

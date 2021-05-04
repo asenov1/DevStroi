@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: FS
+Build-Jdk: 14.0.1
+Implementation-Title: Spring Boot Web Application
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: dancho.springframework
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/spring-boot-web
+Created-By: Maven Integration for Eclipse
+
